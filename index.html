@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R1 Store | Download Portal</title>
+    <link rel="shortcut icon" href="ico.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style_23.css">
+</head>
+<body>
+    <div id="preloader" class="preloader">
+        <img src="ico.webp" alt="R1 Logo" class="preloader-logo">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1 class="card-title gradient-text">R1 Store | DOWNLOAD</h1>
+                <p class="card-description">Enter your session ID to check download status</p>
+            </div>
+            <div class="card-content">
+                <div>
+                    <input 
+                        type="text" 
+                        id="sessionId" 
+                        class="input" 
+                        placeholder="Enter session ID..."
+                        autocomplete="off"
+                    />
+                    <button class="button button-primary w-full" onclick="checkStatus()">
+                        Check Session
+                    </button>
+                </div>
+                
+                <div id="status"></div>
+                <div id="downloadArea"></div>
+            </div>
+        </div>
+    </div>
+
+        <footer style="position: fixed; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; padding: 1rem; color: hsl(var(--muted-foreground)); font-size: 0.875rem; background: hsl(var(--background)); border-top: 1px solid hsl(var(--border));">
+    </footer>
+
+    <script src="script_23.js"></script>
+</body>
+</html>
